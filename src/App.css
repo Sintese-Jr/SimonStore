@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Smooch&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+/*Home*/
+
+* {
+  margin:0 auto;
+  box-sizing: border-box;
+  
+}
+.Home{
+  height:100%;
+  width:100%;
+}
+header{
+  height:58px;
+}
+div.top {
+  background-color: #204fd9;
+  font-family: 'Oswald', sans-serif;
+  position:fixed;
+  height:58px;
+  width:100%;
+  top:0;
+  left:0;
+  padding:15px;
+  z-index:1;
+}
+.top ul li{
+  padding: 18px;
+  border-radius:8px;
+  display:inline;
+  list-style-type:none;
+}
+.top ul li a{
+  color:#fff;
+  text-shadow: black 0.1em 0.1em 0.1em;
+  text-decoration: none;
+  transition: background .4s;
+  padding:18px;
+  border-radius:8px;
+}
+.top ul li a:hover {
+  background-color: rgba(10,23,55,0.4);
+  color: #fff;
+  border-radius:8px;
+}
+div.title{
+  z-index:2;
+  position:fixed;
+  font-family: 'Smooch', cursive;
+}
+.title ul li{
+  display:flex;
+  list-style-type:none;
+  top:50px;
+}
+.title ul li a{
+  color:#fff;
+  text-decoration:none;
+  top:50px;
+  margin:14px;
+  font-size:22px;
+  text-shadow: 0 0 10px gold;
+}
+.logo{
+   display:flex;
+   height:50px;
+   vertical-align:top;
+   margin:4px;
+   margin-left:160px;
+   position:fixed;
+   z-index:2;
+}
+.container{
+  height:500px;
+  width:100%;
+  background-image: url(src/assets/moeda.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position:relative;
+}
+.imagem{
+  position:absolute;
+  height:25%;
+  top:20%;
+  left:38%;
+  padding-left:23%;
+}
+div.container img{
+  max-width:100%;
+  max-height:100%;
+}
+.nome{
+  height:25%;
+  position:absolute;
+  top:20%;
+  left:38%;
+}
+div.nome h1{
+  font-family: 'Permanent Marker', cursive;
+  font-size:60px;
+}
+.prf{
+  height:70%;
+  position:absolute;
+  left:40%;
+}
+div.prf p{
+  height:100%;
+  width:100%;
+  font-family: 'Permanent Marker', cursive;
+  font-size:20px;
+  color: #204fd9;
+}
+
+
+/*Catalogo*/
+
+.Catalogo{
+  width:100%;
+  height:80%;
+  position:relative;
+  padding: 5%;
+  font-family: 'Oswald', sans-serif;
+  color: #204fd9;
+  background-color:#ebebeb;
+}
+div.Catalogo h2{
+  font-size:40px;
+}
+.filter-card{
+  position:relative;
+  height:40px;
+  width:850px;
+}
+.search-input {
+  width:80%;
+  height:100%;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  text-indent: 10px;
+  position:absolute;
+}
+.search-button {
+  width: 15%;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  border: none;
+  background: #204fd9;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: 0.2s ease;
+  position:absolute;
+  left:80.1%;
+}
+.search-button:hover {
+  background: #dedede;
+  color: #204fd9;
+  /*border-box:none;*/
+}
+
+.card-wrapper {
+  max-width: 1000px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 30px;
+  padding-top: 50px;
+}
+.card-item {
+  height: 400px;
+  background: var(--gray);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background:#fafafa;
+}
+.card-content {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-item img {
+  width: 50%;
+}
+
+.card-item p {
+  text-align:justify;
+  font-style: italic;
+  color: #00000070;
+}
+.button{
+  width:90%;
+  background-color: #204fd9;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius:10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.button:hover{
+  background: #dedede;
+  color: var(--blue);
+}
+/*Sobre*/
+
+.Sobre-Nos{
+  height:100%;
+  width:100%;
+  position:relative;
+  padding: 5%;
+  font-family: 'Oswald', sans-serif;
+  color: #204fd9;
+  background-color:#ebebeb;
+}
+div.Sobre-Nos h2{
+  font-size:40px;
+}
+
+
+/*Contato*/
+.Contato{
+  height:100%;
+  position:relative;
+  padding: 5%;
+  font-family: 'Oswald', sans-serif;
+  color: #204fd9;
+  background-color:#ebebeb;
+}
+div.Contato h2{
+  font-size:40px;
+}
+
+
